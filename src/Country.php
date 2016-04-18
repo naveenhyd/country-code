@@ -26,6 +26,7 @@ class Country extends Common {
      * @return boolean
      */
     public function CheckCountryInCsv($country) {
+        $country = strtoupper($country);
         $content = array_map('str_getcsv', file(BASE_PATH . "/country-list.csv"));
 
         foreach ($content as $key => $row) {
