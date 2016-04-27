@@ -1,2 +1,3 @@
-Country Name;Alpha-2 code;Alpha-3 code;Numeric code;Phone Format
-India;IN;IND;356;
+Country Name;Alpha-2 code;Alpha-3 code;Numeric code;Phone Format;Date Format
+India;IN;IND;356;XXX-XXX-XXXX;DD-MM-YYYY
+United States;US;USA;840;XXX-XXX-XXXX;MM-DD-YYYY
