@@ -10,6 +10,12 @@ require dirname(__DIR__) . "/vendor/autoload.php";
 
 class Country extends Common {
 
+    function __construct($countryCode = '') {
+        if (!empty($countryCode)) {
+            $this->Setup($countryCode);
+        }
+    }
+
     /**
      * 
      * @param string $countryCode
