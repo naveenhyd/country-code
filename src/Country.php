@@ -39,6 +39,16 @@ class Country extends Common {
             $row = explode(";", $row[0]);
             if ($row[1] == $country || $row[2] == $country) {
                 if ($key > 0) {
+
+                    #   setup the format strings
+                    $this->_setup = array(
+                        'country' => $row[0],
+                        'phone_format' => $row[4],
+                        'date_format' => $row[5]
+                    );
+
+//                    print_r($this);
+
                     return true;
                 } else {
                     return false;
